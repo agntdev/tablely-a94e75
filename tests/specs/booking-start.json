@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Book now",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Initiate booking flow with party size and date prompts"
+            }
+          }
+        ],
+        "send": {
+          "callback": "booking:start"
+        }
+      }
+    ]
+  }
+]
